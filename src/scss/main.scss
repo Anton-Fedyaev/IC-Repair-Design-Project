@@ -5,6 +5,11 @@
 @import "./base/utils";
 @import "./base/containers";
 @import "./base/sticky-footer";
+@import "./base/btn";
 
 /* Blocks */
 @import "./blocks/*.scss";
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@0,6..12;1,6..12&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
