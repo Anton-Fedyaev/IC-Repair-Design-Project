@@ -1,13 +1,26 @@
 .home {
 	position: relative;
-	background-image: url(../img/home.jpeg);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	max-width: 100%;
-	min-height: 707px;
+	// background-image: url(../img/home.jpeg);
+	// background-size: cover;
+	// background-position: center;
+	// background-repeat: no-repeat;
+	width: 100%;
+	height: 707px;
 }
 
+.home__img-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.home__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
 
 .home::before {
 	content: "";
@@ -85,13 +98,17 @@
 @media only screen and (max-width: 450px) {
 	.home__btn {
 		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	.home__btn1 {
-		padding: 20px 105px;
+		width: max(50%, 338px);
+		padding: 20px 0;
 	}
 
 	.home__btn2 {
-		padding: 20px 90px;
+		// width: 338px;
+		width: max(50%, 338px);
+		padding: 20px 0;
 	}
 }

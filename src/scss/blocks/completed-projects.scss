@@ -1,0 +1,143 @@
+.projects {
+	min-height: 1074px;
+	background-color: #131313;
+}
+
+.container__projects {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding-top: 107px;
+	max-width: 1201px;
+}
+
+.projects__left {
+	min-height: 552px;
+}
+
+.left__title {
+	margin-top: 65px;
+	margin-bottom: 34px;
+	font-family: var(--font-accent);
+	font-weight: 400;
+	font-size: 27px;
+	line-height: 139%;
+	letter-spacing: -0.07em;
+	text-transform: uppercase;
+	color: #e3b873;
+}
+
+.left__text {
+	max-width: 442px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 191%;
+	color: #fff;
+}
+
+.projects__info {
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 36px;
+}
+
+.info__title {
+	margin-bottom: 9px;
+	font-family: var(--font-accent);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 139%;
+	text-transform: uppercase;
+	color: var(--accent);
+}
+
+.info__text {
+	font-family: var(--font-main);
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 164%;
+	color: #fff;
+}
+
+.slider__line {
+	margin-top: 45px;
+	display: flex;
+}
+
+
+
+.projects__right {
+	max-width: 679px;
+}
+
+.right__title {
+	margin-right: 60px;
+	position: relative;
+	font-family: var(--font-accent);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 139%;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.right__title:nth-last-child(2) {
+	margin: 0px;
+}
+
+.active {
+	color: #E3B873;
+	text-decoration: underline;
+	text-underline-offset: 7px;
+}
+
+
+.right__img {
+	margin-top: 45px;
+}
+
+@media only screen and (max-width: 1085px) {
+
+	.left__title,
+	.slider__line {
+		margin-top: 0;
+	}
+
+	.projects__right>span {
+		display: none;
+	}
+
+	.projects__info {
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 1020px) {
+	.container__projects {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.left__title,
+	.left__text {
+		text-align: center;
+	}
+
+	.left__text>br {
+		display: none;
+	}
+
+	.left__text {
+		font-size: 11px;
+		max-width: 311px;
+	}
+
+	.left__title {
+		font-size: 22px;
+	}
+	.info__title{
+		font-size: 14px;
+	}
+}

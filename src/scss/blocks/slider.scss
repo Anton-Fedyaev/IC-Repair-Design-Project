@@ -1,0 +1,50 @@
+.slider {
+	margin-top: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 205px;
+	@media only screen and (max-width: 1085px) {
+		 margin-top: 40px;
+	}
+}
+
+.slider__btn-prev {
+	display: flex;
+	align-items: center;
+}
+
+.slider__btn-next {
+	display: flex;
+	align-items: center;
+}
+
+.slider__line {
+	display: flex;
+	align-items: center;
+
+
+	transition: all 1s;
+
+	max-width: 679px;
+	overflow: hidden;
+}
+
+.slider__img {}
+
+.slider__wrapper {
+	display: flex;
+	align-items: center;
+	gap: 17.5px;
+}
+
+.slider__dot {
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.activ-dot {
+	background: rgba(255, 255, 255);
+}
